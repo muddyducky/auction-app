@@ -1,0 +1,30 @@
+{
+  "name": "trademe-auction-data",
+  "version": "1.0.0",
+  "description": "Auction Item Management CLI",
+  "main": "index.js",
+  "type": "module",
+  "author": "Rachel Mareraki",
+  "preferGlobal": true,
+  "bin": {
+    "trademe-cli": "src/commands/auctionItemsCommands.js"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "auction:add": "node src/commands/auctionItemsCommands.js add",
+    "auction:find": "node src/commands/auctionItemsCommands.js find",
+    "auction:update": "node src/commands/auctionItemsCommands.js update",
+    "auction:remove": "node src/commands/auctionItemsCommands.js remove",
+    "auction:list": "node src/commands/auctionItemsCommands.js list"
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "inquirer": "^12.6.3",
+    "mongoose": "^8.15.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10"
+  }
+}
