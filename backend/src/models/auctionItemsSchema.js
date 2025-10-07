@@ -10,6 +10,6 @@ const auctionItemsSchema = new mongoose.Schema({
     
 });
 
-const AuctionItem = mongoose.model('AuctionItem', auctionItemsSchema);
+const AuctionItem = mongoose.model('AuctionItem', auctionItemsSchema, "auctionitems");
 
 export default AuctionItem;
