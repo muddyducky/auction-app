@@ -39,12 +39,13 @@ const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(morgan('dev'))
-// app.use(cors('http://localhost:5173'))
+app.use(cors({ origin: 'http://localhost:5173' }))
 
 app.use('/api', searchRoutes)
 app.use('/api', listingRoutes)
-app.listen(PORT, () => console.log(`Server is connected at http://localhost:${PORT}`))
 
+connectDB()
+app.listen(PORT, () => console.log(`Server is connected at http://localhost:${PORT}`))
 
 
 export {connectDB, closeDB};
