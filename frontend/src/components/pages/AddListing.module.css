@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.listItem {
+    height: 80vh;
+    width: 45vw;
+    border: 1px solid black;
+    padding: 30px;
+    box-shadow: 3px 3px 8px black;
+    background-color: rgb(245, 251, 253);
+}
+
+.listItem > h1 {
+    margin-bottom: 3vh;
+    text-align: center;
+    color: #00416A;
+}
+
+.addListingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 1vh;
+}
+.addListingForm > button {
+    margin-top: 3vh;
+    width: 20vw;
+    height: 10vh;
+    font-size: 30px;
+    margin-left: 9vw;
+    background-color: skyblue;
+    border: 0.5px solid white;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px black;
+    border: 1px solid black;
+}
+
+.addListingForm > button:hover {
+    background-color: #B9D9EB;
+    color: #00416A;
+}
+
+label {
+     font-weight: bold;
+     font-size: 18px;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+    width: 40vw;
+    height: 5vh;
+    margin-bottom: 2vh;
+}
+
+.bottomInput {
+    display: flex;
+    gap: 1vh;
+}
+
+.bottomInput > label {
+    margin-top: 1vh;
+}
+
+.bottomInput > input{
+    width: 10vw; 
+    font-size: 15px;
+}
+
+.descriptionInput {
+    min-height: 20vh;
+    font-size: 20px;
+    padding: 10px;
+    overflow-y: hidden;
+    resize: none;
+    line-height: 1;
+}
+

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.buySellContainer {
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+  margin-top: 2vh;
+}
+
+.itemsContainer {
+  padding: 10vh 0 7vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8vh; 
+  justify-content: center; 
+  flex-grow: 1; 
+  overflow-y: auto;
+  padding-bottom: 7vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: skyblue; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f8ff; 
+}
+

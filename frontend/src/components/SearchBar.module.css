@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.searchBar {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    height: 17vh;
+    justify-items: center;
+    padding: 25px;
+    background-color: rgb(245, 251, 253);
+}
+
+.searchBar > input {
+    justify-content: center;
+    padding: 10px;
+    height: 10vh;
+    width: 50vw;
+    font-size: 30px;
+}
