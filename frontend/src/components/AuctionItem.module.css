@@ -28,13 +28,13 @@
   max-height: 180px;
   display: flex;
   justify-content: center;
+  padding: 0.2rem;
 }
 
 .imageContainer >img {
-  width: 20vw;
-  height: 12vh;
-  object-fit: contain;
-  margin-bottom: 3vh;
+  width: 10rem;
+  height: 5rem;
+  margin: 1rem 0;
 }
 
 
@@ -46,6 +46,7 @@
   background-color: skyblue;
   border: 0.5px solid white;
   cursor: pointer;
+  font-size: 11px;
 }
 
 .tabs > button:hover {
